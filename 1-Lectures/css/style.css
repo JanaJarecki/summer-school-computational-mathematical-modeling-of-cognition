@@ -1,0 +1,52 @@
+/******
+Computational Cognitive Modeling Style Sheet
+*******/
+
+
+/*-------- 'Next' button ---------*/
+/* Button styling */
+.btn {
+  border-radius: 1px !important;
+  font-family: "News Cycle","Arial Narrow Bold",sans-serif !important;
+  font-weight: bold !important;
+  font-size: 0.8eM !important;
+  text-transform: uppercase !important;
+  background-color: inherit !important;
+  border: 2px solid black !important;
+  color: black !important;
+  letter-spacing: 1.1px !important;
+  transition: all .3s !important;
+}
+
+.btn-xs {
+  color: #888 !important;
+  border-color: #888 !important;
+  border-width: 1px !important;
+  margin-top: -2px !important;
+}
+
+.btn:hover {
+	color: white !important;
+	background-color: black !important;
+}
+
+.btn-xs:hover {
+  background-color: #888 !important;
+}
+
+
+
+/*-------- Code chunk header panel ---------*/
+.panel-default, .tutorial-exercise-output > pre {
+  border-radius: 1px !important;
+  border: 1px solid #e7e7e7 !important;
+}
+
+.panel-default > .panel-heading {
+  background-color: #f8f8f8 !important;
+  border-radius: 0px !important;
+  font-family: "News Cycle","Arial Narrow Bold",sans-serif !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.3px !important;
+  font-weight: bold !important;
+}
