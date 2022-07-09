@@ -1,3 +1,21 @@
+# Administrative folders
+99-Admin/
+1-Lectures/
+!1-Lectures/*.html
+!1-Lectures/*.pdf
+!1-Lectures/data/
+
+# Archive folders
+xArchive/
+*/xArchive/
+
+# Source files
+*.Rmd
+*.pptx
+*.doc
+*.docx
+*.xlsx
+
 # History files
 .Rhistory
 .Rapp.history
