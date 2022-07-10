@@ -8,7 +8,7 @@ This repository holds (for archival purposes) the material of the summer school.
 09. July 2022 to 23. July 2022
 
 ## Homepage and More Information
-https://sites.uci.edu/cmmc/travel-info/
+https://sites.uci.edu/cmmc/
 
 ## Instructors of the Summer School
 _in alphabetic order_
