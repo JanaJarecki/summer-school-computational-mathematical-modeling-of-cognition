@@ -2,7 +2,6 @@
 99-Admin/*
 !1-Lectures/
 1-Lectures/*
-!1-Lectures/*.html
 !1-Lectures/*.pdf
 !1-Lectures/*.R
 !1-Lectures/data/
