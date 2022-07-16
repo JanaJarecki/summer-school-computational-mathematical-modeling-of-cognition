@@ -1,0 +1,19 @@
+# Signal Detection Theory
+model{
+
+ for (j in 1:k){
+  
+  for (i in 1:ns){
+      h[i,j] ~ dbin(thetah[i,j],s[i,j])
+      f[i,j] ~ dbin(thetaf[i,j],n[i,j])
+       
+      thetah[i,j] <- phi(d[i,j]/2-c[i,j])
+      thetaf[i,j] <- phi(-d[i,j]/2-c[i,j])
+
+      d[i,j] ~ dnorm(0,0.5)
+      c[i,j] ~ dnorm(0,2)
+    }
+
+  }
+
+}

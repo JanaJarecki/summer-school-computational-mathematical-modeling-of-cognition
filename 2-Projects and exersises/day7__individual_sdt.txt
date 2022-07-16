@@ -1,0 +1,19 @@
+model{
+  for (j in 1:k){
+    for (i in 1:ns){
+
+    # Observed counts
+      h[i,j] ~ dbin(thetah[i,j],s[i,j])
+      f[i,j] ~ dbin(thetaf[i,j],n[i,j])
+
+      # Reparameterization Using Equal-Variance Gaussian SDT
+      thetah[i,j] <- phi(d[i,j]/2-c[i,j])
+      thetaf[i,j] <- phi(-d[i,j]/2-c[i,j])
+
+      # These Priors over Discriminability and Bias Correspond 
+      # to Uniform Priors over the Hit and False Alarm Rates
+      d[i,j] ~ dnorm(0,0.5)
+      c[i,j] ~ dnorm(0,2)
+    }
+  }
+}
